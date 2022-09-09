@@ -3,10 +3,8 @@
 #include <stdio.h>
 
 /**
- * main = Entry point
- *
+ * main - Entry point
  * Description: 'Printf integers'
- *
  * Return: Always (0) Success
  */
 
