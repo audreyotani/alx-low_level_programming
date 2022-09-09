@@ -4,7 +4,9 @@
 
 /**
  * main = Entry point
- * Description: 'Assigning numbers to variables'
+ *
+ * Description: 'Printf integers'
+ *
  * Return: Always (0) Success
  */
 
