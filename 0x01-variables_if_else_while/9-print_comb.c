@@ -8,12 +8,11 @@
 
 int main(void)
 {
-	int single = 0;
+	int single;
 
-	while (single <= 9)
+	for (single = 0; single <= 9; single++)
 	{
 		putchar((single % 10) + '0');
-		single++
 		if (single == 9)
 			continue;
 
