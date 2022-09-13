@@ -2,17 +2,16 @@
 
 /**
  * print_alphabet - Entry point
- * Description - 'print alphabet in lowercase'
+ * Description - 'printing alphabets in lowercase'
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	char alph = 'a';
+	char alph;
 
-	while (alph <= 'z')
+	for (alph = 'a'; alph <= 'z'; alph++)
 	{
 		_putchar(alph);
-		alph++;
 	}
 	_putchar('\n');
 }
