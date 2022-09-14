@@ -1,31 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * Description: 'fibonacci numbers'
- * Return: Always (0) success
+ * main -entry point
+ * Return: 0
  */
 
 int main(void)
 {
 	int count;
-	unsigned long num1 = 0, num2 = 1, sum;
+	int countto = 50;
+	long int1 = 1;
+	long int2 = 2;
 
-	for (count = 0; count < 50; count++)
+	for (count = 1; count <= (countto / 2); count++)
 	{
-		sum = num1 + num2;
-		printf("%lu", sum);
+		printf("%li %li ", int1, int2);
+		int1 += int2;
+		int1 += int2;
 	}
-	num1 = num2;
-	num2 = sum;
+	if (countto % 2 == 1)
+	{
+		printf("%li", int1);
+	}
+	printf("\n");
 
-	if (count == 49)
-	{
-		printf("\n");
-	}
-	else
-	{
-		printf(", ");
-	}
 	return (0);
 }
