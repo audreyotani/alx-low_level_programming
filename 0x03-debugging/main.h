@@ -2,5 +2,7 @@
 #define MAIN_H
 void positive_or_negative(int i);
 int largest_number(int a, int b, int c);
-#endif /* MAIN_H */
 void print_remaining_days(int month, int day, int year);
+int convert_day(int, int);
+int _printf(char c);
+#endif /* MAIN_H */
