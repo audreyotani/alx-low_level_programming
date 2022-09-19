@@ -1,21 +1,22 @@
 #include "main.h"
-
 /**
- * print_rev - prototype
- * @s: charcater
+ * print_rev - Print the alphabet in reverse
+ * @s: string input
+ * Return: 0
  */
-
 void print_rev(char *s)
 {
-	int a = 0, index;
+	int a, i;
 
-	while (s[index++])
+	a = 0;
+	for (i = 1; a < s[i - 1]; i++)
 	{
-		a++;
+		i = i;
 	}
-	for (index = a - 1; a >= 0; a--)
+	while (i >= 0)
 	{
-		_putchar(s[a]);
+		_putchar(s[i]);
+		i--;
 	}
 	_putchar('\n');
 }
