@@ -1,38 +1,32 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
- * main - entry point
- * @argc: counts arguments
- * @argv: array
- * Return: 0
- */
-
+  * main - prints its name, followed by new.
+  * @argc: argument counter.
+  * @argv: argument vector.
+  * Return: zero.
+  */
 int main(int argc, char *argv[])
 {
-	int i = 0, j = 0;
-	
+	int i, j, sum = 0;
+
 	if (argc == 1)
 	{
-		printf("0\n");
+		printf("%d\n", argc - 1);
+		return (0);
 	}
-	else
+	for (i = 1; i < argc; i++)
 	{
-		while (i < argc)
-		{
-			if (argv[i][0] >= '0' && argv[i][0] <= '9')
-			{
-				j += atoi(argv[i]);
-			}
-			else
+		for (j = 0; argv[i][j] != '\0'; j++)
+			if (!((argv[i][j] >= '0' && argv[i][j] <= '9') || argv[i][j] == '-'))
 			{
 				printf("Error\n");
 				return (1);
 			}
-			i++;
-		}
-		printf("%d\n", j);
+		sum += atoi(argv[i]);
 	}
+	printf("%d\n", sum);
 	return (0);
 }
