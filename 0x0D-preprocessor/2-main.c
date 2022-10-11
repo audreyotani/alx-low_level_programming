@@ -3,13 +3,10 @@
 /**
  * main - entry point
  * Return: 0 success
- * @argc: argument count
- * @argv: argument value
  */
 
-int main(int argc, char *argv[])
+int main(void)
 {
-	printf("%s\n", argv[0]);
-
+	printf("%s\n", __FILE__);
 	return (0);
 }
